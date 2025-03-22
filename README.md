@@ -2,7 +2,7 @@
 
 Bienvenue dans mon dépôt GitHub ! 🎉
 
-Ce dépôt contient tous les projets que je réalise dans le cadre de mes études. 📚💻 Ici, tu trouveras des travaux pratiques, des exercices, des projets personnels et bien plus encore. 🚀
+Ce dépôt contient tous les projets que je réalise dans le cadre de mes études. 📚💻 Ici, tu trouveras des travaux pratiques, des exercices et c'est tout je crois ? 😓
 
 ## 📂 Contenu du dépôt
 
