@@ -1,0 +1,186 @@
+/*---------------------------- Application générale ----------------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    color: #FFFFFF;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-image: url(../Images/back.png);
+    background-size: cover;
+    background-position: center;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000;
+    padding: 0.938rem 1.25rem;
+    height: 10%;
+}
+
+.navigationElements::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 0.063rem;
+    background-color: #FFFFFF;
+    transition: width 0.3s ease;
+}
+
+.navigationElements {
+    margin: 0.625rem; /* top right bottom left */
+    padding: 0.125rem;
+    position: relative;
+    text-decoration: none;
+}
+
+.navigationElements:hover::after {
+    width: 100%;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 1.25rem;
+}
+
+nav {
+    display: flex;
+}
+
+#shoppingCart {
+    text-decoration: none;
+    font-size: 1.375rem;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    color: #FFFFFF;
+    height: 10%;
+    padding: 1.25rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+/*---------------------------- Fin de l'application générale ----------------------------*/
+
+/*---------------------------- Début de la page d'accueil ----------------------------*/
+
+#firstContainer {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1.25rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.625rem;
+}
+
+#sloganBox {
+    font-size: 1.2rem;
+}
+
+/* Bouton Uiverse */
+
+.boton-elegante {
+    padding: 0.75rem 1.563rem;
+    border: 0.125rem solid #2c2c2c;
+    background-color: #1a1a1a;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border-radius: 1.875rem;
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+
+.boton-elegante:hover {
+    border-color: #FFFFFF;
+    background: #000000;
+}
+
+/*---------------------------- Fin de la page d'accueil ----------------------------*/
+
+/*---------------------------- Début de la page eBoutique ----------------------------*/
+
+
+
+/*---------------------------- Fin de la page eBoutique ----------------------------*/
+
+/*---------------------------- Début de la page produit ----------------------------*/
+
+
+
+/*---------------------------- Fin de la page produit ----------------------------*/
+
+/*---------------------------- Début de la page informative ----------------------------*/
+
+
+
+/*---------------------------- Fin de la page informative ----------------------------*/
+
+/* Adaptation aux petits écrans (non généralisée) */
+
+@media (max-width: 760px) {
+
+    .menu-icon {
+        display: flex;
+    }
+
+    nav {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 8%;
+        left: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.95);
+        text-align: center;
+        padding: 0.938rem 0;
+    }
+
+    nav a {
+        font-size: 1.2rem;
+        width: fit-content;
+    }
+
+    #menu-toggle:checked ~ nav {
+        display: flex;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    #sloganBox {
+        font-size: 1rem;
+    }
+
+    .boton-elegante {
+        font-size: 1rem;
+        padding: 0.625rem 1.25rem;
+    }
+
+}
